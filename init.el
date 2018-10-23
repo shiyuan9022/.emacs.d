@@ -13,7 +13,7 @@
 (add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
 (require 'init-benchmarking) ;; Measure startup time
 
-(defconst *spell-check-support-enabled* nil) ;; Enable with t if you prefer
+(defconst *spell-check-support-enabled* t) ;; Enable with t if you prefer
 (defconst *is-a-mac* (eq system-type 'darwin))
 
 ;;----------------------------------------------------------------------------
@@ -85,14 +85,14 @@
 (require 'init-compile)
 ;;(require 'init-crontab)
 (require 'init-textile)
-(require 'init-markdown)
+;;(require 'init-markdown)
 ;;(require 'init-csv)
-(require 'init-erlang)
+;;(require 'init-erlang)
 ;;(require 'init-javascript)
 ;;(require 'init-php)
 ;;(require 'init-org)
 ;;(require 'init-nxml)
-(require 'init-html)
+;;(require 'init-html)
 ;;(require 'init-css)
 ;;(require 'init-haml)
 ;;(require 'init-http)
