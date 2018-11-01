@@ -7,8 +7,13 @@
 (let ((minver "24.4"))
   (when (version< emacs-version minver)
     (error "Your Emacs is too old -- this config requires v%s or higher" minver)))
-(when (version< emacs-version "25.1")
-  (message "Your Emacs is old, and some functionality in this config will be disabled. Please upgrade if possible."))
+
+(defvar best-gc-cons-threshold
+  4000000
+  "best default value. should not be too big")
+
+;; don't Gc during startup to save time
+(setq gc-cons-threshold most-positive-fixnum)
 
 (add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
 (require 'init-benchmarking) ;; Measure startup time
@@ -52,27 +57,27 @@
 (require 'init-frame-hooks)
 (require 'init-xterm)
 ;;(require 'init-themes)
-(require 'init-osx-keys)
-(require 'init-gui-frames)
-(require 'init-dired)
-(require 'init-isearch)
-(require 'init-grep)
-(require 'init-uniquify)
-(require 'init-ibuffer)
+;;(require 'init-osx-keys)
+;;(require 'init-gui-frames)
+;;(require 'init-dired)
+;;(require 'init-isearch)
+;;(require 'init-grep)
+;;(require 'init-uniquify)
+;;(require 'init-ibuffer)
 (require 'init-flycheck)
 
-(require 'init-recentf)
+;;(require 'init-recentf)
 (require 'init-smex)
 (require 'init-ivy)
 ;;(require 'init-helm)
-(require 'init-hippie-expand)
+;;(require 'init-hippie-expand)
 (require 'init-company)
 (require 'init-windows)
-(require 'init-sessions)
-(require 'init-fonts)
-(require 'init-mmm)
+;;(require 'init-sessions)
+;;(require 'init-fonts)
+;;(require 'init-mmm)
 
-(require 'init-editing-utils)
+;;(require 'init-editing-utils)
 ;;(require 'init-whitespace)
 
 ;;(require 'init-vc)
@@ -111,19 +116,19 @@
 ;;(require 'init-nix)
 ;;(maybe-require-package 'nginx-mode)
 
-(require 'init-paredit)
+;;(require 'init-paredit)
 (require 'init-lisp)
-(require 'init-slime)
-(require 'init-clojure)
-(require 'init-clojure-cider)
+;;(require 'init-slime)
+;;(require 'init-clojure)
+;;(require 'init-clojure-cider)
 (require 'init-common-lisp)
 
 (when *spell-check-support-enabled*
   (require 'init-spelling))
 
-(require 'init-misc)
+;;(require 'init-misc)
 
-(require 'init-folding)
+;;(require 'init-folding)
 (require 'init-dash)
 
 ;;(require 'init-twitter)
@@ -131,10 +136,10 @@
 ;;(require 'init-ledger)
 ;; Extra packages which don't require any configuration
 
-(require-package 'gnuplot)
+;;(require-package 'gnuplot)
 (require-package 'lua-mode)
-(require-package 'htmlize)
-(require-package 'dsvn)
+;;(require-package 'htmlize)
+;;(require-package 'dsvn)
 (when *is-a-mac*
   (require-package 'osx-location))
 (unless (eq system-type 'windows-nt)
