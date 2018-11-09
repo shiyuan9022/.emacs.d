@@ -60,10 +60,10 @@
 ;;(require 'init-osx-keys)
 ;;(require 'init-gui-frames)
 ;;(require 'init-dired)
-;;(require 'init-isearch)
+(require 'init-isearch)
 ;;(require 'init-grep)
 ;;(require 'init-uniquify)
-;;(require 'init-ibuffer)
+(require 'init-ibuffer)
 (require 'init-flycheck)
 
 ;;(require 'init-recentf)
@@ -77,7 +77,7 @@
 ;;(require 'init-fonts)
 ;;(require 'init-mmm)
 
-;;(require 'init-editing-utils)
+(require 'init-editing-utils)
 ;;(require 'init-whitespace)
 
 ;;(require 'init-vc)
