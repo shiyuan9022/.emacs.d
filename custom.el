@@ -14,8 +14,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   (quote
-    (uptimes dotenv-mode daemons lua-mode cask-mode flycheck-package highlight-quoted rainbow-mode macrostep cl-lib-highlight aggressive-indent immortal-scratch auto-compile ipretty elisp-slime-nav git-messenger git-commit magit-todos magit git-timemachine gitconfig-mode gitignore-mode git-blamed guide-key highlight-escape-sequences whole-line-or-region move-dup page-break-lines multiple-cursors avy expand-region browse-kill-ring symbol-overlay rainbow-delimiters beacon mode-line-bell vlf list-unicode-display unfill switch-window company-quickhelp company ivy-xref swiper projectile counsel ivy-historian ivy smex flycheck-color-mode-line flycheck ibuffer-vc anzu command-log-mode scratch diminish wgrep exec-path-from-shell cl-lib fullframe seq whitespace-cleanup-mode disable-mouse))))
+   '(uptimes dotenv-mode daemons lua-mode cask-mode flycheck-package highlight-quoted rainbow-mode macrostep cl-lib-highlight aggressive-indent immortal-scratch auto-compile ipretty elisp-slime-nav git-messenger git-commit magit-todos magit git-timemachine gitconfig-mode gitignore-mode git-blamed guide-key highlight-escape-sequences whole-line-or-region move-dup page-break-lines multiple-cursors avy expand-region browse-kill-ring symbol-overlay rainbow-delimiters beacon mode-line-bell vlf list-unicode-display unfill switch-window company-quickhelp company ivy-xref swiper projectile counsel ivy-historian ivy smex flycheck-color-mode-line flycheck ibuffer-vc anzu command-log-mode scratch diminish wgrep exec-path-from-shell cl-lib fullframe seq whitespace-cleanup-mode disable-mouse)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
